@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  .album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  h1, h2 {
+    font-family: Verdana;
+    font-weight: lighter;
+    font-size: 2.5em;
+    color: #333;
+    text-transform: Capitalize;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  hr {
+    width: 250px;
+    border: 2px solid #67D5B5;
+    margin: 40px auto;
+  }
+  
+  p {
+    margin: auto;
+    font-family: Raleway;
+    font-size: 20px;
+    max-width: 780px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  li {
+    height: 45vh;
+    margin: auto;
+    max-width: 68vw;
+  }
+  
+  .large {
+    flex-basis: 70%;
+    background: green;
+  }
+  
+  .small {
+    flex-basis: 30%;
+    background: red;
+  }
+  
+  li:nth-child(1) {
+    background-image: url('../media/4motions-werbeagentur-2tGFOMrcVIo-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  li:nth-child(2) {
+    background-image: url('../media/flex.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  li:nth-child(3) {
+    background-image: url('../media/bank-phrom-Tzm3Oyu_6sk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  li:nth-child(4) {
+    background-image: url('../media/square1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* ==========  MEDIA QUERIES  =========== */
+  
+  @media screen and (max-width: 1100px) {
+    li {
+      max-width: 48vw;
+    }
+    .large {
+      flex-basis: 50%;
+    }
+    .small {
+      flex-basis: 50%;
+    }
+    p {
+      max-width: 580px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    li {
+      max-width: 92vw;
+      margin-top: 10px;
+    }
+    .large {
+      flex-basis: 100%;
+    }
+    .small {
+      flex-basis: 100%;
+    }
+    p {
+      max-width: 390px;
+    }
+  }
